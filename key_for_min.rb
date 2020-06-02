@@ -10,9 +10,10 @@ def key_for_min_value(name_hash)
   name_hash.each do |key, value|
 
     if min_value == 0 || value < min_value
+      bindng.pry
       min_value = value
       mkey = key
-    binding.pry
+    
     end
   end
   mkey
